@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<toc version="1.0"> <!--  categoryclosedimage="FolderClosed" categoryopenimage="FolderOpened"  
+topicimage="ItemIco"-->
+        <tocitem text="EducaQuizz"    target="aplicacion">
+           <tocitem text="Modo Usuario"    target="Modo Usuario"/>
+           <tocitem text="Modo Administrador"    target="Modo Administrador"/>
+        </tocitem>
+</toc>
