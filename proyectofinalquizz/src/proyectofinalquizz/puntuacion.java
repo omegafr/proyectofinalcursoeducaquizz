@@ -86,6 +86,8 @@ public class puntuacion extends JDialog {
 				JButton okButton = new JButton("OK");
 				okButton.addActionListener(new ActionListener() {
 					public void actionPerformed(ActionEvent e) {
+						nombre.setText(null);
+						apellido.setText(null);
 						metodos m = new metodos();
 						m.insertapuntuaciones(nombre.getText(), apellido.getText(), pregunta1.puntuacion);
 						dispose();
