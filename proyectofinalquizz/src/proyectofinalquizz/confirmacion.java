@@ -20,6 +20,7 @@ import java.awt.event.ActionListener;
 import java.awt.event.WindowAdapter;
 import java.awt.event.WindowEvent;
 import java.awt.event.ActionEvent;
+import javax.swing.SwingConstants;
 
 public class confirmacion extends JDialog {
 
@@ -71,7 +72,8 @@ public class confirmacion extends JDialog {
 		contentPanel.add(passwordField);
 		
 		JLabel lblNewLabel = new JLabel("Introduzca la contrase\u00F1a del administrador");
-		lblNewLabel.setBounds(106, 159, 233, 14);
+		lblNewLabel.setHorizontalAlignment(SwingConstants.CENTER);
+		lblNewLabel.setBounds(44, 159, 324, 14);
 		contentPanel.add(lblNewLabel);
 		{
 			JLabel lblNewLabel_2 = new JLabel("");

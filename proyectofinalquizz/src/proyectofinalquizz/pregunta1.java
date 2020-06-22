@@ -119,19 +119,23 @@ public class pregunta1 extends JDialog {
 		this.setTitle("Preguntas");
 
 		boton1 = new JButton("New button");
+		boton1.setFont(new Font("Tahoma", Font.PLAIN, 10));
 
 		boton1.setBounds(10, 252, 128, 52);
 		contentPanel.add(boton1);
 
 		boton2 = new JButton("New button");
+		boton2.setFont(new Font("Tahoma", Font.PLAIN, 10));
 		boton2.setBounds(159, 252, 128, 52);
 		contentPanel.add(boton2);
 
 		boton3 = new JButton("New button");
+		boton3.setFont(new Font("Tahoma", Font.PLAIN, 10));
 		boton3.setBounds(314, 252, 145, 52);
 		contentPanel.add(boton3);
 
 		boton4 = new JButton("New button");
+		boton4.setFont(new Font("Tahoma", Font.PLAIN, 10));
 		boton4.setBounds(480, 252, 145, 52);
 		contentPanel.add(boton4);
 
@@ -156,7 +160,7 @@ public class pregunta1 extends JDialog {
 			public void actionPerformed(ActionEvent e) {
 				m.conexion();
 
-				if (preguntas > 0) {
+				if (preguntas >= 0) {
 					if (metodos.sacarespuesta1(respuesta).contains(m.correcta(respuesta))) {
 						if (SO.isWindows()) {
 							ReproducirSonido(".\\sonido\\correcto.wav");
@@ -222,7 +226,7 @@ public class pregunta1 extends JDialog {
 			public void actionPerformed(ActionEvent e) {
 				m.conexion();
 
-				if (preguntas > 0) {
+				if (preguntas >= 0) {
 					if (metodos.sacarespuesta2(respuesta2).contains(m.correcta(respuesta))) {
 
 						if (SO.isWindows()) {
@@ -285,7 +289,7 @@ public class pregunta1 extends JDialog {
 			public void actionPerformed(ActionEvent e) {
 				m.conexion();
 
-				if (preguntas > 0) {
+				if (preguntas >= 0) {
 					if (metodos.sacarespuesta3(respuesta3).contains(m.correcta(respuesta))) {
 
 						if (SO.isWindows()) {
@@ -346,7 +350,7 @@ public class pregunta1 extends JDialog {
 			public void actionPerformed(ActionEvent e) {
 				m.conexion();
 
-				if (preguntas > 0) {
+				if (preguntas >= 0) {
 					if (metodos.sacarespuesta4(respuesta4).contains(m.correcta(respuesta))) {
 
 						if (SO.isWindows()) {
